@@ -1,0 +1,9 @@
+article {
+  width: 200px;
+  padding: 10px;
+  flex-grow: 1;
+  margin: 10px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 2px 2px 3px rgb(99, 99, 99);
+}

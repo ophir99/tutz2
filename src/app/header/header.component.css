@@ -1,0 +1,56 @@
+nav {
+  display: flex;
+  background-color: #fff;
+  height: 100%;
+}
+
+nav img {
+  width: 200px;
+  margin: 0 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  flex-grow: 1;
+  color: rgb(161, 161, 161);
+}
+
+nav ul.main-menu {
+  flex-grow: 1;
+}
+
+nav ul.main-menu li {
+  flex-grow: 1;
+}
+
+nav ul.right-menu {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+nav ul.search {
+  justify-content: flex-end;
+}
+
+nav ul.search li {
+  margin: 0 15px;
+}
+nav ul.right-menu li {
+  flex-grow: 1;
+}
+
+.active {
+  color: #000;
+}
+
+section {
+  width: 100%;
+  min-height: 200px;
+  background-color: #fff;
+  position: relative;
+  z-index: 900;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

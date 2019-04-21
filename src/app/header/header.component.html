@@ -1,0 +1,95 @@
+<nav>
+  <img [src]="imgUrl" alt="" />
+  <ul class="main-menu">
+    <li
+      [class]="i === index ? 'active' : null"
+      *ngFor="let fdfdfdgf of menu; let i = index"
+      (click)="respondToClick(fdfdfdgf, i)"
+    >
+      {{ fdfdfdgf.name }} {{ fdfdfdgf.selected }}
+    </li>
+  </ul>
+  <!-- <ul class="main-menu">
+    <li
+      *ngFor="
+        let fdfdfdgf of menu;
+        let i = index;
+        let e = even;
+        let o = odd;
+        let x = first;
+        let y = last
+      "
+    >
+      {{ fdfdfdgf }} --{{ i }} -- {{ e }} -- {{ o }} ** {{ x }}**{{ y }}
+    </li>
+  </ul> -->
+  <ul class="search">
+    <li>
+      <i class="fas fa-search"></i>
+    </li>
+  </ul>
+  <ul class="right-menu">
+    <li>Docs</li>
+    <li>Support</li>
+    <li>Console</li>
+    <li>
+      <i class="fas fa-user"></i>
+    </li>
+  </ul>
+</nav>
+
+<section *ngIf="currentSection == 'Why Google' && showSection">
+  <div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid at
+      beatae deserunt dolorum earum eum laborum tempora. Culpa, recusandae
+      repellendus. Sunt sed vero adipisci rem quo? Ullam, voluptatibus
+      recusandae. Impedit?
+    </p>
+  </div>
+  <div>
+    <h3>Why Google?</h3>
+  </div>
+</section>
+<section *ngIf="currentSection == 'Solutions' && showSection">
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat
+      ipsa! Magnam consequuntur similique repudiandae ipsum earum temporibus
+      saepe aut? Iste nulla quo ullam magni earum nobis architecto. Harum, quos.
+    </p>
+  </div>
+  <div>
+    <h3>
+      Solutions
+    </h3>
+  </div>
+</section>
+<section *ngIf="currentSection == 'Products' && showSection">
+  <div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto veritatis
+      fugit minus aspernatur qui nemo fuga laudantium nobis adipisci officiis,
+      sint accusantium aut, exercitationem id! Aliquam praesentium ipsa
+      molestiae laboriosam.
+    </p>
+  </div>
+  <div>
+    <h3>
+      Products
+    </h3>
+  </div>
+</section>
+<section *ngIf="currentSection == 'Getting started' && showSection">
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta
+      expedita, dolor nemo est maxime voluptatum totam libero. Maxime laboriosam
+      veritatis corrupti quidem magni, explicabo consectetur porro dolores.
+      Nesciunt, molestias.
+    </p>
+  </div>
+  <div>
+    Getting started
+  </div>
+</section>
